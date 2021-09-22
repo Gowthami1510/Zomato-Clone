@@ -216,6 +216,80 @@ h1{
     width:200px;
     height:150px;
 }
+
+.text-x2{
+    margin-top: 50px;
+    color:rgb(22, 2, 77);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.list{
+    text-align: center;
+}
+.email{
+    width:250px;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+}
+.fifth__button{
+    background-image: linear-gradient(to right,crimson 50%,orangered 100%);
+    width:150px;
+    height:50px;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:white;
+}
+
+.fifth__button:hover{
+    background-image: linear-gradient(to left,crimson 50%,orangered 100%);
+}
+.image__of__quotes{
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quoted__image{
+    width:700px;
+    height:300px;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.footer__section{
+    background-image: linear-gradient(to right,crimson 50%,orangered 100%);
+    width:100%;
+    height:200px;
+    margin-top: 40px;;
+    padding:30px;
+}
+.footer__items{
+  
+    display: flex;
+    justify-content: space-evenly;
+}
+.parazomato{
+    color:white;
+    font-size: 3rem;
+    font-weight: 900;
+    align-items: center;
+}
+.footer__list__items{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fb{
+    background:transparent;
+    border:none;
+    width:300px;
+    height:40px;
+    color:white;  
+}
+
 @media (min-width: 1200px) {
     .navbar {
         padding: 0 3rem;
