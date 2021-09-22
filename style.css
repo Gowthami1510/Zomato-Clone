@@ -1,0 +1,297 @@
+* { /* Override the default browser spacing */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: gray;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    z-index: 9999;
+}
+
+.navbar__brand {
+    width: 100px;
+}
+
+.brand__logo {
+    width: 100%;
+}
+
+.navbar__nav__items {
+    display: flex;
+}
+
+.container {
+    padding: 0px 20px;
+}
+
+.hero__image__container {
+    position: relative;
+    width: 100%;
+}
+
+.hero__image {
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 10px;
+}
+.hero__container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ /* .hero__image__shape {
+    position: absolute;
+} */
+
+.hero__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero__text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: darkblue;
+    font-weight: 900;
+} 
+.footage__container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  margin-top:4rem;
+  margin-left:1.5rem;
+  align-items: center;
+  width: 100%; 
+ } 
+ .video__footage {
+    position: relative;
+}
+
+.video__footage::before {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    transform: translate(-1rem, -1rem);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.video__footage__text {
+    margin-top: 2rem;
+    color: brown;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin:25px;
+    text-align: center;
+}
+.food__list__container{
+    position: relative;
+    /* margin:5rem 0 gives margin for food__list__container as 5rem from top and bottom */
+    margin:5rem 0;
+}
+.food__menu__card__list{
+    width:100%;
+}
+.food__menu__card__image{
+    border: 6px 6px 0 0;
+    /* it will be wrapped up in list container */
+    width:100%;
+}
+.food__menu__card__details{
+    padding: 1rem;
+    text-align:left;
+    color:black;
+}
+.food__menu__card__title{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color:darkblue;
+    font-weight: 900;
+}
+.view__more__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+h1{
+    text-align: center;
+}
+.fourth__button{
+    background: transparent;
+    border:none;
+    color:white;
+    font-size: 1rem;
+    transition-duration: 1s;
+    width:70%;
+    border-radius: 6px;
+}
+.fourth__button:hover{
+    width:40%;
+    height: 35px;
+    color:crimson;
+    background-color:  white;
+    border-radius: 6px;
+}
+
+.button__primary {
+    background-image: linear-gradient(
+        to right,
+        crimson 50%,
+        orange 100%
+        
+    );
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px red;
+    border-radius: 10px;
+    display: block;
+}
+
+.button__primary:hover {
+    background-position: right center;
+}
+
+.restaurant__list__container{
+    margin-top: 3rem;
+}
+.restaurant__list__row1{
+    display:flex;
+    align-items: baseline;
+}
+.restaurant__list__row2{
+    margin-top: 10px;
+    display:flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+.restaurant1, .restaurant3{
+    border-radius: 5px;
+    margin:0 5px;    
+    /* margin has 2 attributes first one is for top and bottom and second one is for left and right */
+    width:150px;
+    height:100px;
+}
+.text-x1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:darkred;
+}
+.restaurant2, .restaurant4{
+    border-radius: 5px;
+    margin:0 5px;    
+    /* margin has 2 attributes first one is for top and bottom and second one is for left and right */
+    width:200px;
+    height:150px;
+}
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 0 3rem;
+    }
+    .button__primary {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+    .hero__image {
+        margin-top: 2rem;
+    }
+    .hero__image__shape{
+        margin-top: 5rem;
+    }
+    .hero__description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__text {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .container {
+        padding: 0px 200px;
+    }
+    .footage__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .video__footage__text{
+        width:60%;
+    }
+    .food__menu__card__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top:2rem;
+    }
+    .food__menu__card{
+        /* flex-basis size: takes 30% out of 100% of flex size and displays */
+        /* flex-wrap: if there is no space left, goes to next line */
+        flex-basis: 30%;
+        background-color: white;
+        border-radius: 6px;
+    }
+    .food__list__container__diagonal{
+        background-image: linear-gradient(to right, crimson 0%, orange 51%,orangered 100%);
+        position: absolute;
+        left:0;
+        top:0;
+        z-index: -3;
+        transform: skewY(-5deg);
+        width:100%;
+        height:100%;
+
+    }
+    .restaurant__list__image__text
+{
+    display: flex;
+    justify-content: space-between;
+}
+    .restaurant__list__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .restaurant__list__row1{
+        margin-top: 3px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
